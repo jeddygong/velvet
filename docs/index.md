@@ -3,11 +3,11 @@ layout: home
 sidebar: false
 
 title: velvet
-titleTemplate: A responsive UI Library powered by Vue3
+titleTemplate: A Vue.js 3 UI Library powered by Vue3
 
 hero:
-  name: velvet-ui 组件库
-  text: 基于 Vue 3 的组件库.
+  name: velvet-ui
+  text: Vue.js 3 UI Library.
   tagline: 🎉 A Vue.js 3 UI Library.
   actions:
     - theme: brand
