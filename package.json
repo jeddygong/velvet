@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "pnpm -C playground dev",
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint . --fix --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --cache",
