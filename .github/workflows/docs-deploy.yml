@@ -22,17 +22,19 @@ jobs:
 
       # 如果缓存没有命中，安装依赖
       - name: Install dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: pnpm install --no-frozen-lockfile --ignore-scripts
 
       # 运行构建脚本
       - name: Build vitepress site
         run: pnpm docs:build
+        env:
+          DOC_ENV: preview
+          NODE_OPTIONS: --max-old-space-size=4096
 
-      - name: Deploy vitepress site
-        with:
-          branch: gh-page
-          folder: docs
+      # - name: Deploy vitepress site
+      #   with:
+      #     branch: gh-page
+      #     folder: docs
 
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
