@@ -1,5 +1,5 @@
 export default {
-  base: '/',
+  base: '/docs',
   title: 'velvet-UI',
   lang: 'zh-CN',
   // description: '',
