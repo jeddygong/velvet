@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "pnpm -C playground dev",
     "docs:dev": "pnpm -C docs dev",
+    "docs:build": "pnpm run -C docs build",
+    "docs:serve": "pnpm run -C docs serve",
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint . --fix --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --cache",
