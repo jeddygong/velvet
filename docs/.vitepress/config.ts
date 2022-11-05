@@ -1,14 +1,9 @@
 export default {
-  base: '/velvet/',
+  base: '/ui/',
   title: 'velvet-UI',
   lang: 'zh-CN',
-  // description: '',
   themeConfig: {
     logo: '/logo.png',
-    // repo: 'jeddygong/velvet',
-    // docsRepo: 'jeddygong/velvet',
-    // docsBranch: 'main/docs',
-
     lastUpdated: true,
     lastUpdatedText: '最后修改时间',
     socialLinks: [{ icon: 'github', link: 'https://github.com/jeddygong/velvet' }],
